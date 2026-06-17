@@ -6,25 +6,24 @@ class JConfig {
 	var $helpurl = 'http://help.joomla.org';
 	var $debug = '0';
 	var $debug_lang = '0';
-	var $sef = '0';
-	var $sef_rewrite = '0';
-	var $sef_suffix = '0';
+	var $sef = '1';
+	var $sef_rewrite = '1';
+	var $sef_suffix = '1';
 	var $feed_limit = '10';
 	var $feed_email = 'author';
 	var $secret = '8cj10FdWeZRdi1wH';
 	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
-	var $log_path = 'C:\\ServidorWEB\\www\\oriente\\logs';
-	var $tmp_path = 'C:\\ServidorWEB\\www\\oriente\\tmp';
+	var $log_path = '/var/www/html/logs';
+	var $tmp_path = '/var/www/html/tmp';
 	var $live_site = '';
 	var $force_ssl = '0';
 	var $offset = '-3';
 	var $caching = '0';
 	var $cachetime = '15';
 	var $cache_handler = 'file';
-	var $memcache_settings = array(
-		);
+	var $memcache_settings = array();
 	var $ftp_enable = '0';
 	var $ftp_host = '127.0.0.1';
 	var $ftp_port = '21';
@@ -32,7 +31,7 @@ class JConfig {
 	var $ftp_pass = '';
 	var $ftp_root = '';
 	var $dbtype = 'mysql';
-	var $host = 'localhost';
+	var $host = 'db';
 	var $user = 'root';
 	var $db = 'oriente';
 	var $dbprefix = 'jos_';
@@ -56,3 +55,4 @@ class JConfig {
 	var $MetaKeys = 'Oriente, Limpeza, Dedetização, Recursos, Humanos, Joinville, Santa Catarina, Limpeza, Joinville, Emprego, Vagas, RH,Limpeza, Conservação, recrutamento e seleção, vagas joinville, seleção';
 	var $offline_message = 'Este site está em manutenção. Por favor, retorne mais tarde.';
 }
+?>

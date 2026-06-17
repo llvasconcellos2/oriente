@@ -1,0 +1,30 @@
+services:
+  db:
+    image: mysql:5.6
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: vertrigo
+      MYSQL_DATABASE: oriente
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/oriente.sql:/docker-entrypoint-initdb.d/oriente.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-pvertrigo"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  web:
+    build:
+      context: ./docker
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:

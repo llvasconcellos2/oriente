@@ -65,7 +65,7 @@ a:hover {
  
 /* OpenID icon style */
 input.system-openid {
-   background: url(http://openid.net/login-bg.gif) no-repeat;
+   background: url(../../../../openid.net/images/login-bg.html) no-repeat;
    background-color: #fff;
    background-position: 0 50%;
    color: #000;
