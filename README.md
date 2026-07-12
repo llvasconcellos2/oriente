@@ -62,9 +62,12 @@ Founded in May 2005, Grupo Oriente is a Brazilian facilities-services company bu
 
 **Key features:**
 
-- Built and themed a full Joomla 1.5 site with a custom template, wiring ChronoForms-driven quote/recruitment/visit-request forms directly into sales and HR workflows — turning the site into an active lead-generation channel instead of a static brochure.
-- Implemented self-service compliance document delivery (FGTS, INSS, state tax certificates via PhocaDownload) on the Certidões and Clientes pages, cutting manual back-office requests for client due-diligence paperwork.
-- Containerized the legacy Joomla 1.5 / PHP 5.6 / MySQL 5.6 stack with Docker so a 2010-era CMS can still be reliably run and demoed today, preserving the original site and its workflows for archival/portfolio reference.
+<!-- KEY FEATURES -->
+### Key Features
+
+- **Lead-generation forms** — quote, recruitment, and visit-request forms wired directly into the company's sales and HR workflows, turning the site into an active lead-generation channel instead of a static brochure
+- **Self-service compliance documents** — downloadable client due-diligence paperwork (FGTS, INSS, state tax certificates) on the Certidões and Clientes pages, cutting manual back-office requests for compliance documents
+- **Containerized legacy stack** — the original Joomla 1.5 / PHP 5.6 / MySQL 5.6 stack packaged with Docker so a 2010-era CMS can still be reliably run and demoed today, preserving the site and its workflows for archival reference
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
